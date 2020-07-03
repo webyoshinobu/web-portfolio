@@ -1,0 +1,60 @@
+/*レスポンシブ*/
+$pc: 1024px;
+$tab: 768px;
+$tabs: 600px;
+$md: 425px;
+$mds: 375px;
+$sm: 320px;
+
+@mixin pc {
+    @media (max-width: ($pc)) {
+      @content;
+}
+}
+@mixin tab {
+    @media (max-width: ($tab)) {
+      @content;
+}
+}
+@mixin tabs {
+  @media (max-width: ($tabs)) {
+    @content;
+}
+}
+@mixin md {
+    @media (max-width: ($md)) {
+      @content;
+}
+}
+@mixin mds {
+    @media (max-width: ($mds)) {
+      @content;
+}
+}
+@mixin sm {
+    @media (max-width: ($sm)) {
+      @content;
+    }
+}
+
+/*代入*/
+%flex-center{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+%flex-center-ac-fs{
+  display:flex;
+  align-items:center;
+  justify-content:flex-start;
+}
+%flex-center-ac-fe{
+  display:flex;
+  align-items:center;
+  justify-content:flex-end;
+}
+
+html,
+body{
+  -webkit-text-size-adjust: 100%;
+}
