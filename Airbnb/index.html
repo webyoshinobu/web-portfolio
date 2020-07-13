@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AirBnb</title>
+    <link rel="stylesheet" type="text/css" href="reset.css" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript" src="header-fadein.js"></script>
+</head>
+<body>
+    <main>
+
+        <header class = "pc-menu">
+            <div class = "airbnb-icon-wrap"><img class = "airbnb-icon" src = "img/airbnbicon.png"></div>
+            <div class = "glnav">
+                <ul class = "glnav-list">
+                    <li class = "glnav-list-item">概要</li>
+                    <li class = "glnav-list-item">準備</li>
+                    <li class = "glnav-list-item">安全</li>
+                    <li class = "glnav-list-item">マネープラン</li>
+                </ul>
+            </div>
+
+            <div class = "income">
+                <div class = "income-con"><span class = "income-con-word">予想月収</span><span class = "income-con-price">￥137,761</span></div>
+                <div class = "hajimeru">はじめる</div>
+            </div>
+        </header>
+
+        <div class = "mobile-fadein-wrap">
+        <div class = "mobile-fadein">
+            <div class = "airbnb-icon-wrap"><img class = "airbnb-icon" src = "img/airbnbicon.png"></div>
+            <div class = "glnav-mobile-fadein">
+                <ul class = "glnav-list-mobile-fadein">
+                    <li class = "glnav-list-item-mobile-fadein">概要</li>
+                    <li class = "glnav-list-item-mobile-fadein">準備</li>
+                    <li class = "glnav-list-item-mobile-fadein">安全</li>
+                    <li class = "glnav-list-item-mobile-fadein">マネープラン</li>
+                </ul>
+            </div>
+        </div>
+        </div>
+
+        <div class = "income-mobile mobile-fadein">
+            <div class = "income-con-mobile">
+                <span class = "income-con-word-mobile">予想月収</span>
+                <span class = "income-con-price-mobile">￥137,761</span>
+            </div>
+            <div class = "hajimeru-mobile">はじめる</div>
+        </div>
+
+
+        <section class = "glnavmobile-wrap">
+            <div class = "airbnb-icon-mobile-wrap">
+
+                <div class="l-drawer">
+                    <input class="l-drawer__checkbox" id="drawerCheckbox" type="checkbox" >
+                    <!-- ドロワーアイコン -->
+                    <label class="l-drawer__icon" for="drawerCheckbox">
+                
+                        <svg class = "airbnb-icon" viewBox="0 0 1000 1000" role="presentation" aria-hidden="true" focusable="false" style="height:34px;width:34px;">
+                          <path d="m499.3 736.7c-51-64-81-120.1-91-168.1-10-39-6-70 11-93 18-27 45-40 80-40s62 13 80 40c17 23 21 54 11 93-11 49-41 105-91 168.1zm362.2 43c-7 47-39 86-83 105-85 37-169.1-22-241.1-102 119.1-149.1 141.1-265.1 90-340.2-30-43-73-64-128.1-64-111 0-172.1 94-148.1 203.1 14 59 51 126.1 110 201.1-37 41-72 70-103 88-24 13-47 21-69 23-101 15-180.1-83-144.1-184.1 5-13 15-37 32-74l1-2c55-120.1 122.1-256.1 199.1-407.2l2-5 22-42c17-31 24-45 51-62 13-8 29-12 47-12 36 0 64 21 76 38 6 9 13 21 22 36l21 41 3 6c77 151.1 144.1 287.1 199.1 407.2l1 1 20 46 12 29c9.2 23.1 11.2 46.1 8.2 70.1zm46-90.1c-7-22-19-48-34-79v-1c-71-151.1-137.1-287.1-200.1-409.2l-4-6c-45-92-77-147.1-170.1-147.1-92 0-131.1 64-171.1 147.1l-3 6c-63 122.1-129.1 258.1-200.1 409.2v2l-21 46c-8 19-12 29-13 32-51 140.1 54 263.1 181.1 263.1 1 0 5 0 10-1h14c66-8 134.1-50 203.1-125.1 69 75 137.1 117.1 203.1 125.1h14c5 1 9 1 10 1 127.1.1 232.1-123 181.1-263.1z"></path>
+                        </svg>
+                        
+                    </label>
+                    <!-- 背景を暗く -->
+                    <label class="l-drawer__overlay" for="drawerCheckbox"></label>
+                    <!-- ドロワーメニュー -->
+                    <nav class="l-drawer__menu">
+                      <ul class = "l-draver-list">
+                        <li class="l-drawer__item">
+                          <div class="l-drawer__item-inner">概要</div>
+                        </li>
+                        <li class="l-drawer__item">
+                          <div class="l-drawer__item-inner">準備</div>
+                        </li>
+                        <li class="l-drawer__item">
+                          <div class="l-drawer__item-inner">安全</div>
+                        </li>
+                        <li class="l-drawer__item">
+                            <div class="l-drawer__item-inner">マネープラン</div>
+                        </li>
+                      </ul>
+                    </nav>
+                  </div>   
+
+            </div>
+        </section>
+
+        <section class = "top" id = "top">
+            <img class = "top-img" src = "img/topimg.jpg">
+            <div class = "income-check-wrap">
+                <div class = "income-check-title">Airbnbホストになって、暮らしをレベルアップ</div>
+                <div class = "income-check-title-sub">どれくらいの収入が見込めるかチェック</div>
+                <div class = "income-check-select-wrap">
+                    <div class = "income-check-select-place">
+                        <select class = "income-check-select-place-con">
+                            <option value="" style="display: none;">ロケーション</option>
+                            <option class = "select" value="select1">テスト</option>
+                            <option class = "select" value="select2">テスト</option>
+                            <option class = "select" value="select3">テスト</option>
+                        </select>
+                    </div>
+                    <div class = "income-check-select-wrap-small">
+                        <div class = "income-check-select-type">
+                            <select class = "income-check-select-type-con">
+                                <option class = "select" value="select1">まるまる貸切</option>
+                                <option class = "select" value="select2">個室</option>
+                                <option class = "select" value="select3">シェアルーム</option>
+                            </select>
+                        </div>
+                        <div class = "income-check-select-howmany">
+                            <select class = "income-check-select-type-con">
+                                <option class = "select" value="select1">ゲスト１人</option>
+                                <option class = "select" value="select2">ゲスト２人</option>
+                                <option class = "select" value="select3">ゲスト３人</option>
+                                <option class = "select" value="select3">ゲスト４人</option>
+                                <option class = "select" value="select3">ゲスト５人</option>
+                                <option class = "select" value="select3">ゲスト６人</option>
+                                <option class = "select" value="select3">ゲスト７人</option>
+                                <option class = "select" value="select3">ゲスト８人</option>
+                                <option class = "select" value="select3">ゲスト９人</option>
+                                <option class = "select" value="select3">ゲスト１０人</option>
+                                <option class = "select" value="select3">ゲスト１１人</option>
+                                <option class = "select" value="select3">ゲスト１２人</option>
+                                <option class = "select" value="select3">ゲスト１３人</option>
+                                <option class = "select" value="select3">ゲスト１４人</option>
+                                <option class = "select" value="select3">ゲスト１５人</option>
+                                <option class = "select" value="select3">ゲスト１６人</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class = "income-check-mon-income">¥ 137,761<span class = "income-check-mon-income-mon">月あたり</span></div>
+                <div class = "income-check-hajimeru">はじめる</div>
+            </div>
+        </section>
+
+        <section class = "expl" id = "expl">
+            <div class = "expl-left">
+                <div class = "expl-left-title">Airbnbでホストするこれだけの理由</div>
+                <div class = "expl-left-con">どんなお家やお部屋でも、Airbnbなら簡単かつ安全にシェアでき、世界中の旅好きな仲間とつながれます。 予約可能日から料金、ハウスルール、ゲストとの交流程度まで、すべて自分で決めることができます。</div>
+            </div>
+            <div class = "expl-right">
+                <div class = "expl-right-title">困ったときも安心</div>
+                <div class = "expl-right-con">万一に備えるUS$1,000,000の財物補償、US$1,000,000の賠償責任保険が全予約に自動付帯。ホストのみなさまと建物・家財の安全をお守りするため全力で取り組んでいます。</div>
+            </div>
+        </section>
+
+        <section class = "step" id = "step">
+            <div class = "step-title-wrap">
+                <div class = "step-title-line"></div>
+                <div class = "step-title">3ステップでホスティング</div>
+            </div>
+            <div class = "step-con">
+                <ul class = "step-list">
+                    <li class = "step-list-item">
+                        <div class = "step-list-item-icon"></div>
+                        <div class = "step-list-item-title">無料でお部屋を掲載</div>
+                        <div class = "step-list-item-con">共有のリビングルームから別荘に至るまで、どんなスペースでも登録料なしで共有しましょう。</div>
+                    </li>
+                    <li class = "step-list-item">
+                        <div class = "step-list-item-icon"></div>
+                        <div class = "step-list-item-title">ホスティング方法を設定</div>
+                        <div class = "step-list-item-con">スケジュール、料金、ゲストへの要件をご自身で選択しましょう。 お困りの際にはいつでもサポートいたします。</div>
+                    </li>
+                    <li class = "step-list-item">
+                        <div class = "step-list-item-icon"></div>
+                        <div class = "step-list-item-title">はじめてのゲストが来ます！</div>
+                        <div class = "step-list-item-con">リスティングが掲載されると、条件にかなったゲストから連絡を受けとることができます。 ゲストの到着前に質問があればメッセージを送信できます。</div>
+                        <div class = "step-link">ホストをはじめる方法をチェック</div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class = "example1">
+            <div class = "example1-left">
+                <div class = "example1-left-wrap">
+                    <div class = "konma">“</div>
+                    <div class = "example1-left-con">「ホスト保証」があったからAirbnb参加を決めたといっても過言でないほどで、被害やトラブルがあったときに頼れるサポートがあるのは本当にありがたいですね。</div>
+                    <div class = "example1-left-con-sub">Dennisさんはロンドンのホスト。自由度の高さに魅力を感じています</div>
+                    <div class = "example1-left-btn">ホスト実践例をチェック</div>
+                </div>
+            </div>
+            <div class = "example1-right">
+                <img class = "example1-img" src="img/example1.jpg">
+            </div>
+        </section>
+
+        <section class = "safe" id = "safe">
+            <div class = "safe-title-wrap">
+                <div class = "safe-title-line"></div>
+                <div class = "safe-title">万一のときも安心です</div>
+            </div>
+            <div class = "safe-con">
+                <div class = "safe-con-left">
+                    <div class = "safe-con-left-word">大切なお家にお迎えする相手選びは、信頼第一で進めたいですよね。 その思いに応えるため、Airbnbでは宿泊者に求める厳格な要件をホスト自身の手で設定し、滞在前にお互い交流できるシステムを採用しています。 万一のトラブルのときには、Airbnbが全力でサポートします。 建物・家財の被害は「ホスト保証」、賠償責任は「ホスト補償保険」でカバー。ホストのみなさまのあらゆるシチュエーションに対処しています。</div>
+                    <div class = "safe-con-left-link">ホストを守るAirbnbの仕組みをチェック</div>
+                </div>
+                <div class = "safe-con-right">
+                    <ul class = "safe-con-right-list">
+                        <li class = "safe-con-right-list-item">予約前に政府発行の身分証明書を求める権限</li>
+                        <li class = "safe-con-right-list-item">ハウスルールに同意しないと泊まれない</li>
+                        <li class = "safe-con-right-list-item">過去の宿泊のレビューもばっちり読める</li>
+                        <li class = "safe-con-right-list-item">財物損害は¥100,000,000まで無料で補償</li>
+                        <li class = "safe-con-right-list-item">$1,000,000の賠償責任保険が無料で付帯</li>
+                        <li class = "safe-con-right-list-item">24時間365日対応グローバルカスタマーサポート</li>
+                    </ul>
+                </div>
+            </div>
+            <img class = "safe-img" src="img/safa-img.jpg">
+        </section>
+
+        <section class = "pay" id = "pay">
+            <div class = "pay-title-wrap">
+                <div class = "pay-title-line"></div>
+                <div class = "pay-title">シンプルな決済</div>
+            </div>
+            <div class = "pay-con-wrap">
+                <div class = "pay-con">
+                    <div class = "pay-con-title">料金設定は完全に自由</div>
+                    <div class = "pay-con-word">料金は常に自由に選択できます。 迷ったときには、 域内需要に合わせて設定できるツールがあります。</div>
+                </div>
+                <div class = "pay-con">
+                    <div class = "pay-con-title">手数料が安い</div>
+                    <div class = "pay-con-word">登録に費用は一切かかりません。Airbnbは通常、予約ごとに業界で最低の均一3％をサービス料としていただいております。</div>
+                </div>
+                <div class = "pay-con">
+                    <div class = "pay-con-title">迅速な支払い</div>
+                    <div class = "pay-con-word">ゲストのチェックイン後に、Paypal、直接振り込み、またはその他の利用可能な方法で受取金を送金できます。</div>
+                    <div class = "pay-link">Airbnb収入を得るまでの流れを見る</div>
+                </div>
+            </div>
+        </section>
+
+        <section class = "example2" id = "example2">
+            <div class = "example2-left">
+                <img class = "example2-img" src="img/example2.jpg">
+            </div>
+            <div class = "example2-right">
+                <div class = "example2-right-wrap">
+                    <div class = "konma">“</div>
+                    <div class = "example2-right-con">ホスト収入でキッチンリフォーム。お家をいろいろアップグレードしました。</div>
+                    <div class = "example2-right-con-sub">Tessaさんはロンドン在住。ホストになって経済的なゆとりができました</div>
+                    <div class = "example2-right-btn">ホスト実践例をチェック</div>
+                </div>
+            </div>
+        </section>
+
+        <section class = "host-num" id = "host-num">
+            <div class = "host-num-title-wrap">
+                <div class = "host-num-title-line"></div>
+                <div class = "host-num-title">夢を共有する仲間が世界中に</div>
+            </div>
+            <div class = "host-num-con-wrap">
+                <div class = "host-num-con">
+                    <div class = "host-num-con-big">290万</div>
+                    <div class = "host-num-con-small">Airbnbのホスト</div>
+                </div>
+                <div class = "host-num-con">
+                    <div class = "host-num-con-big">80万</div>
+                    <div class = "host-num-con-small">Airbnbにおける毎晩の平均宿泊数</div>
+                </div>
+                <div class = "host-num-con">
+                    <div class = "host-num-con-big">14,000</div>
+                    <div class = "host-num-con-small">月あたりの新規登録ホスト数</div>
+                </div>
+            </div>
+        </section>
+
+        <section class = "about" id = "about">
+            <div class = "about-title-wrap">
+                <div class = "about-title-line"></div>
+                <div class = "about-title">Airbnbについて</div>
+            </div>
+            <div class = "about-con-wrap">
+                <div class = "about-con">
+                    <div class = "about-con-title">Airbnbとは？</div>
+                    <div class = "about-con-word">Airbnbは世界中の宿泊先や体験と人々をつなぎます。 ホストたちが原動力となるコミュニティが、地元のように旅するユニークな機会をゲストに提供しています。</div>
+                </div>
+                <div class = "about-con">
+                    <div class = "about-con-title">ホスティングとは？</div>
+                    <div class = "about-con-word">空いているお部屋やお家、得意分野があるなら、世界中の仲間とシェアして暮らしをステップアップできます。 掲載できるのはお部屋や体験です。掛け持ちもOK。 無理のないペースでできます。</div>
+                    <div class = "about-con-link">体験ホスティングの詳細はこちら</div>
+                </div>
+            </div>
+        </section>
+
+        <section class = "qa" id = "qa">
+            <div class = "qa-title-wrap">
+                <div class = "qa-title-line"></div>
+                <div class = "qa-title">よくある質問</div>
+            </div>
+            <div class = "qa-con">
+                <ul class = "qa-con-list">
+                    <li class = "qa-con-list-item">Airbnbホストになれるのはどんな人？</li>
+                    <li class = "qa-con-list-item">予約前にゲストに求められる要件は？</li>
+                    <li class = "qa-con-list-item">お部屋の掲載料はいくら？</li>
+                </ul>
+                <ul class = "qa-con-list">
+                    <li class = "qa-con-list-item">家財破損があった場合、どのような補償がありますか？</li>
+                    <li class = "qa-con-list-item">リスティングの料金を選ぶには？</li>
+                    <li class = "qa-con-list-item">料金設定の支援ツールはありますか？</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class = "hosting" id = "hosting">
+            <div class = "hosting-title">ホスティングの詳細はこちら</div>
+            <div class = "hosting-con-wrap">
+                <div class = "hosting-con">
+                    <img class = "hosting-con-img" src = "img/hosting-img1.jpg">
+                    <div class = "host-word-wrap">
+                        <div class = "hosting-con-title">初期設定</div>
+                        <div class = "hosting-con-title-sub">ホスティング入門ガイド</div>
+                        <div class = "hosting-con-link">もっと詳しく</div>
+                    </div>
+                </div>
+                <div class = "hosting-con">
+                    <img class = "hosting-con-img" src = "img/hosting-img2.jpg">
+                    <div class = "host-word-wrap">
+                        <div class = "hosting-con-title">安全</div>
+                        <div class = "hosting-con-title-sub">ホストを守るAirbnbのしくみ</div>
+                        <div class = "hosting-con-link">もっと詳しく</div>
+                    </div>
+                </div>
+                <div class = "hosting-con">
+                    <img class = "hosting-con-img" src = "img/hosting-img3.jpg">
+                    <div class = "host-word-wrap">
+                        <div class = "hosting-con-title">マネープラン</div>
+                        <div class = "hosting-con-title-sub">Airbnbで収益を得るには</div>
+                        <div class = "hosting-con-link">もっと詳しく</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class = "try" id = "try">
+            <div class = "try-con">
+                <img class = "try-img" src = "img/try-img.png">
+                <div class = "try-title">収益化してみますか？</div>
+                <div class = "try-btn">はじめる</div>
+            </div>
+        </section>
+
+        <section class = "links" id = "links">
+            <div class = "links-con">
+                <div class = "links-con-title">Airbnb</div>
+                <ul class = "links-list">
+                    <li class = "links-list-item">採用情報</li>
+                    <li class = "links-list-item">ニュース</li>
+                    <li class = "links-list-item">ポリシー</li>
+                    <li class = "links-list-item">ダイバーシティ&ビロンギング</li>
+                    <li class = "links-list-item">アクセシビリティ対応</li>
+                    <li class = "links-list-item">企業情報</li>
+                </ul>
+            </div>
+            <div class = "links-con">
+                <div class = "links-con-title">スタッフのおすすめ</div>
+                <ul class = "links-list">
+                    <li class = "links-list-item">信頼&安全</li>
+                    <li class = "links-list-item">お友達紹介クーポン</li>
+                    <li class = "links-list-item">Airbnb Citizen</li>
+                    <li class = "links-list-item">出張</li>
+                    <li class = "links-list-item">アクティビティ</li>
+                    <li class = "links-list-item">Airbnbmag</li>
+                </ul>
+            </div>
+            <div class = "links-con">
+                <div class = "links-con-title">ホスティング</div>
+                <ul class = "links-list">
+                    <li class = "links-list-item">おもてなしの心</li>
+                    <li class = "links-list-item">ホストの責任</li>
+                    <li class = "links-list-item">コミュニティセンター</li>
+                    <li class = "links-list-item">体験を掲載</li>
+                    <li class = "links-list-item">オープンホーム</li>
+                    <li class = "links-list-item">リソースセンター<span class = "links-new">新着</span></li>
+                </ul>
+            </div>
+            <div class = "links-con">
+                <div class = "links-con-title">サポート</div>
+                <ul class = "links-list">
+                    <li class = "links-list-item">ヘルプ</li>
+                    <li class = "links-list-item">エリアサポート<span class = "links-new">新着</span></li>
+                </ul>
+            </div>
+        </section>
+
+        <footer>
+            <div class = "ft-left">
+                <div class = "ft-word">Airbnb Global Services Limited</div>
+                <div class = "ft-word">観光庁長官(01)第S0001号(2018年6月15日-2023年6月14日)</div>
+                <div class = "ft-word">&copy 2020 Airbnb, Inc. All rights reserved. 利用規約 · プライバシー · サイトマップ</div>
+            </div>
+            <div class = "ft-right">
+                <div class = "sns-wrap">
+                    <img class = "sns-icon" src = "img/fb-icon.png">
+                    <img class = "sns-icon" src = "img/tw-icon.png">
+                    <img class = "sns-icon" src = "img/ins-icon.png">
+                </div>
+            </div>
+        </footer>
+    </main>
+</body>
+</html>
