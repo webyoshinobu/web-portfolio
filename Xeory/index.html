@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xerory Extension</title>
+    <link rel="stylesheet" type="text/css" href="reset.css" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript" src="scrolltop.js"></script>
+</head>
+<body>
+    <header id = "for-scrolltop">
+        <nav>
+            <div class = "logo">Xerory Extension</div>
+
+            <ul class = "glnav">
+                <li class = "glnav-item">記事ページサンプル</li>
+                <li class = "glnav-item">Extensionをダウンロード</li>
+            </ul>
+
+            <div id="nav-drawer">
+                <input id="nav-input" type="checkbox" class="nav-unshown">
+                <label id="nav-open" for="nav-input"><span></span></label>
+				<label class="nav-unshown" id="nav-close" for="nav-input"></label>
+				<div id="nav-content">
+					<ul id ="glnavmobile">
+						<div class ="accbox">
+						<label for="label1"><li class = "glmovileitem">記事ページサンプル</li></label>
+						</div>
+						<div class ="accbox">
+						<label for="label2"><li class = "glmovileitem">Extensionをダウンロード</li></label>
+						</div>
+					</ul>
+				</div>
+            </div>
+            
+        </nav>
+        <section class = "top" id = "top">
+            <div class = "top-title">Xerory Extension</div>
+            <div class = "top-title-sub">Xeory Extensionはワンコラムのサイト型テーマです。ユーザーに対して重要なコンテンツを効率的に届けられるようにデザインされています。５種類のカラーバリエーションを用意しています。</div>
+        </section>
+    </header>
+    <main>
+
+        <section class = "popular-article" id = "popular-article">
+            <div class = "popular-article-title">人気のある記事</div>
+            <ul class = "popular-article-list">
+                <li class = "popular-article-item">
+                    <div class = "popular-article-item-number1">No.1</div>
+                    <img class = "popular-article-item-img" src = "img/MacBook-and-clutter.png">
+                    <div class = "popular-article-item-category">カテゴリー#1</div>
+                    <div class = "popular-article-item-link">テスト投稿</div>
+                </li>
+                <li class = "popular-article-item">
+                    <div class = "popular-article-item-number2">No.2</div>
+                    <img class = "popular-article-item-img" src = "img/macbook-holding.png">
+                    <div class = "popular-article-item-category">カテゴリー#1</div>
+                    <div class = "popular-article-item-link">テスト投稿</div>
+                </li>
+                <li class = "popular-article-item">
+                    <div class = "popular-article-item-number3">No.3</div>
+                    <img class = "popular-article-item-img" src = "img/communication.png">
+                    <div class = "popular-article-item-category">カテゴリー#1</div>
+                    <div class = "popular-article-item-link">テスト投稿</div>
+                </li>
+                <li class = "popular-article-item">
+                    <div class = "popular-article-item-number4">No.4</div>
+                    <img class = "popular-article-item-img" src = "img/macbook-at-the-coffee-shop.jpg">
+                    <div class = "popular-article-item-category">カテゴリー#1</div>
+                    <div class = "popular-article-item-link">テスト投稿</div>
+                </li>
+                <li class = "popular-article-item">
+                    <div class = "popular-article-item-number5">No.5</div>
+                    <img class = "popular-article-item-img" src = "img/rest-time-in-front-of-macbook.png">
+                    <div class = "popular-article-item-category">カテゴリー#1</div>
+                    <div class = "popular-article-item-link">テスト投稿</div>
+                </li>
+            </ul>
+        </section>
+
+        <section class = "latest-article" id = "latest-article">
+            <div class = "latest-article-title">最近の投稿</div>
+            <ul class = "latest-article-list">
+                <li class = "latest-article-item">
+                    <div class = "latest-article-item-data"><div class = "year">2014</div><div class = "date">10/24</div></div>
+                    <img class = "latest-article-item-img" src = "img/MacBook-and-clutter.png">
+                    <div class = "latest-article-item-category">カテゴリー#1</div>
+                    <div class = "latest-article-item-link">テスト投稿</div>
+                </li>
+                <li class = "latest-article-item">
+                    <div class = "latest-article-item-data"><div class = "year">2014</div><div class = "date">10/24</div></div>
+                    <img class = "latest-article-item-img" src = "img/macbook-holding.png">
+                    <div class = "latest-article-item-category">カテゴリー#1</div>
+                    <div class = "latest-article-item-link">テスト投稿</div>
+                </li>
+                <li class = "latest-article-item">
+                    <div class = "latest-article-item-data"><div class = "year">2014</div><div class = "date">10/24</div></div>
+                    <img class = "latest-article-item-img" src = "img/communication.png">
+                    <div class = "latest-article-item-category">カテゴリー#1</div>
+                    <div class = "latest-article-item-link">テスト投稿</div>
+                </li>
+                <li class = "latest-article-item">
+                    <div class = "latest-article-item-data"><div class = "year">2014</div><div class = "date">10/24</div></div>
+                    <img class = "latest-article-item-img" src = "img/macbook-at-the-coffee-shop.jpg">
+                    <div class = "latest-article-item-category">カテゴリー#1</div>
+                    <div class = "latest-article-item-link">テスト投稿</div>
+                </li>
+                <li class = "latest-article-item">
+                    <div class = "latest-article-item-data"><div class = "year">2014</div><div class = "date">10/24</div></div>
+                    <img class = "latest-article-item-img" src = "img/rest-time-in-front-of-macbook.png">
+                    <div class = "latest-article-item-category">カテゴリー#1</div>
+                    <div class = "latest-article-item-link">テスト投稿</div>
+                </li>
+            </ul>
+        </section>
+
+        <section class = "feature" id = "feature">
+            <div class = "feature-title-wrap">
+                <div class = "feature-title">XeoryExtensionの特徴</div>
+                <div class = "feature-title-sub">feature</div>
+            </div>
+            <div class = "triangle"></div>
+            <div class = "feature-con-wrap">
+                <div class = "feature-con">
+                    <div class = "feature-con-num">1</div>
+                    <div class = "feature-con-title">モバイルレスポンシブ</div>
+                    <div class = "feature-con-title-sub">Mobile Responsive</div>
+                    <!--モバイル用画像-->
+                    <img class = "feature-img-mobile" src = "img/macbook-at-the-coffee-shop.jpg">
+                    <!--モバイル用画像-->
+                    <div class = "feature-con-word">Xeory Extensionはレスポンシブデザインを採用しています。スマートフォンやタブレットなど各種デバイスで表示が最適化されます。</div>
+                    <div class = "feature-con-link">詳しく見る</div>
+                </div>
+                <img class = "feature-img" src = "img/macbook-at-the-coffee-shop.jpg">
+            </div>
+            <div class = "feature-con-wrap">
+                <img class = "feature-img" src = "img/two-coffee-at-the-shop.jpg">
+                <div class = "feature-con">
+                    <div class = "feature-con-num">2</div>
+                    <div class = "feature-con-title">HTML5デザイン</div>
+                    <div class = "feature-con-title-sub">HTML5 Design</div>
+                    <!--モバイル用画像-->
+                    <img class = "feature-img-mobile" src = "img/two-coffee-at-the-shop.jpg">
+                    <!--モバイル用画像-->
+                    <div class = "feature-con-word">Xeory Extensionは最新のHTML5言語でデザイン及びコーディングがなされています。時代遅れのソースからは卒業しましょう。</div>
+                    <div class = "feature-con-link">詳しく見る</div>
+                </div>
+            </div>
+            <div class = "feature-con-wrap">
+                <div class = "feature-con">
+                    <div class = "feature-con-num">3</div>
+                    <div class = "feature-con-title">SEO最適化</div>
+                    <div class = "feature-con-title-sub">Search Engine Optimized</div>
+                    <!--モバイル用画像-->
+                    <img class = "feature-img-mobile" src = "img/imac-glasses-desk.jpg">
+                    <!--モバイル用画像-->
+                    <div class = "feature-con-word">Xeory ExtensionはGoogleのSEOガイドラインに可能な限り沿った構造になっています。必要なのは良質なコンテンツだけです。</div>
+                    <div class = "feature-con-link">詳しく見る</div>
+                </div>
+                <img class = "feature-img" src = "img/imac-glasses-desk.jpg">
+            </div>
+            <div class = "feature-con-wrap">
+                <img class = "feature-img" src = "img/macbook-holding.png">
+                <div class = "feature-con">
+                    <div class = "feature-con-num">4</div>
+                    <div class = "feature-con-title">高いカスタマイズ性</div>
+                    <div class = "feature-con-title-sub">Customizable</div>
+                    <!--モバイル用画像-->
+                    <img class = "feature-img-mobile" src = "img/macbook-holding.png">
+                    <!--モバイル用画像-->
+                    <div class = "feature-con-word">Xeory Extensionはカスタマイズフリーです。CSS, HTML, PHP の知識があれば自由にカスタマイズすることができます。</div>
+                    <div class = "feature-con-link">詳しく見る</div>
+                </div>
+            </div>
+        </section>
+
+        <section class = "service" id = "service">
+            <div class = "service-title-wrap">
+                <div class = "service-title">サービス紹介</div>
+                <div class = "service-title-sub">service</div>
+            </div>
+
+            <div class = "triangle"></div>
+
+            <div class = "service-con">
+                <div class = "service-left">
+                    <div class = "service-left-title">Xeoryカスタマイズ</div>
+                    <div class = "service-left-title-sub">Xeory Customize</div>
+                    <div class = "service-left-link">カスタマイズ事例を見る</div>
+                </div>
+                <div class = "service-right">
+                    <div class = "service-right-title">コンサルティング</div>
+                    <div class = "service-right-title-sub">Consulting</div>
+                    <div class = "service-right-link">カスタマイズ事例を見る</div>
+                </div>
+            </div>
+        </section>
+
+        <section class = "company" id = "company">
+            <div class = "company-title-wrap">
+                <div class = "company-title">会社紹介</div>
+                <div class = "company-title-sub">company</div>
+            </div>
+
+            <div class = "triangle"></div>
+
+            <div class = "company-con-wrap">
+                <div class = "company-con">
+                    <div class = "company-name">
+                        <ul class = "company-name-list">
+                            <li class = "company-name-item-line">会社名</li>
+                            <li class = "company-name-item">株式会社ルーシー</li>
+                        </ul>
+                    </div>
+                    <div class = "company-tel">
+                        <ul class = "company-tel-list">
+                            <li class = "company-tel-item">電話番号</li>
+                            <li class = "company-tel-item">03-1111-2222</li>
+                        </ul>
+                    </div>
+                    <div class = "company-add">
+                        <ul class = "company-add-list">
+                            <li class = "company-add-item">住所</li>
+                            <li class = "company-add-item">東京都港区西新橋２-７-４ CJビル11階</li>
+                        </ul>
+                    </div>
+                </div>
+            
+                <div class = "company-map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3232.069071862684!2d139.75164194607396!3d35.666729550219664!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188beb67eb7f0d%3A0xb8c65eebff1ed95a!2z44CSMTA1LTAwMDMg5p2x5Lqs6YO95riv5Yy66KW_5paw5qmL77yS5LiB55uu77yX4oiS77yUIO-8o--8quODk-ODqyAxMemajg!5e0!3m2!1sja!2sjp!4v1586863037125!5m2!1sja!2sjp" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe></div>
+            </div>
+        </section>
+
+        <section class = "contact" id = "contact">
+            
+            <div class = "contact-title-wrap">
+                <div class = "contact-title">お問い合わせ</div>
+                <div class = "contact-title-sub">inquiry</div>
+            </div>
+
+            <div class = "triangle"></div>
+
+            <form class = "contact-form-wrap">
+                <div class = "contact-name">
+                    <div class = "contact-name-title" for="rendou">お名前（必須）</div>
+                    <div class = "contact-name-text-wrap">
+                        <input class = "contact-name-text-wrap-con" id="rendou" type="text" name="yourname">
+                    </div>
+                </div>
+                <div class = "contact-mail">
+                    <div class = "contact-mail-title" for="mail">メールアドレス（必須）</div>
+                    <div class = "contact-mail-text-wrap">
+                        <input  class = "contact-mail-text-wrap-con" id="mail" type="email" name="mail">
+                    </div>
+                </div>
+                <div class = "contact-daimei">
+                    <div class = "contact-daimei-title" for="rendou">題名</div>
+                    <div class = "contact-daimei-text-wrap">
+                        <input class = "contact-daimei-text-wrap-con" id="rendou" type="text" name="title">
+                    </div>
+                </div>
+                <div class = "contact-comment">
+                    <div class = "contact-comment-title" for="comment">メッセージ本文</div>
+                    <div class = "contact-comment-text-wrap">
+                        <textarea class = "contact-comment-text-wrap-con" id="comment" name="comment"></textarea>
+                    </div>
+                </div>
+                <div class = "contact-submit-wrap">
+                    <div class = "contact-submit">
+                        <input class = "submit-btn" type="submit" value="送信">
+                    </div>
+                </div>
+            </form>
+
+        </section>
+
+        <section class = "links" id = "links">
+            <div class = "links-title">XeoryExtension</div>
+            <div class = "links-menu">
+                <div class = "blog">
+                    <div class = "blog-title">ブログコンテンツ</div>
+                    <ul class = "blog-list">
+                        <li class = "blog-item">記事ページサンプル</li>
+                        <li class = "blog-item">Extensionをダウンロード</li>
+                    </ul>
+                </div>
+                <div class = "sns">
+                    <div class = "sns-title">ソーシャルメディア</div>
+                    <ul class = "sns-list">
+                        <li class = "sns-item">
+                            <img class = "sns-img" src = "">
+                            <div class = "sns-name">Twitter</div>
+                        </li>
+                        <li class = "sns-item">
+                            <img class = "sns-img" src = "">
+                            <div class = "sns-name">Facebook</div>
+                        </li>
+                        <li class = "sns-item">
+                            <img class = "sns-img" src = "">
+                            <div class = "sns-name">Google+</div>
+                        </li>
+                        <li class = "sns-item">
+                            <img class = "sns-img" src = "">
+                            <div class = "sns-name">Feedly</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class = "facebookwrap">
+                <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fphotoyoshinobu&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="100%" height="100%" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+            </div>
+        </section>
+
+        <section class = "scrolltop" id = "scrolltop">
+            <div class = "scrolltop-wrap" id = "scrolltop-wrap"></div>
+        </section>
+
+    </main>
+
+    <footer id = "footer">
+        <small>&copy Copyright 2020 Xerory Extension. All rights reserved.</small>
+    </footer>
+
+</body>
+</html>
